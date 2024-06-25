@@ -1,0 +1,325 @@
+{
+    "Items": [
+        {
+            "minimum_balance": {
+                "S": "200"
+            },
+            "cvv": {
+                "S": "321"
+            },
+            "status": {
+                "S": "active"
+            },
+            "customer_id": {
+                "S": "9000090"
+            },
+            "ssn_last4_digits": {
+                "S": "9876"
+            },
+            "last_transaction_date": {
+                "S": "09/09/2021"
+            },
+            "account_last4_digits": {
+                "S": "7856"
+            },
+            "zipcode": {
+                "S": "12345"
+            },
+            "current_balance": {
+                "S": "450"
+            },
+            "type_id": {
+                "S": "RC"
+            },
+            "card_number": {
+                "S": "1234123412341235"
+            },
+            "last_statement_balance": {
+                "S": "300"
+            },
+            "type": {
+                "S": "customer_payment_details"
+            }
+        },
+        {
+            "zip_code": {
+                "S": "67890"
+            },
+            "customer_id": {
+                "S": "200002"
+            },
+            "ssn_last4_digits": {
+                "S": "2345"
+            },
+            "wire_routing_number": {
+                "S": "910910910"
+            },
+            "house_number": {
+                "S": "1234"
+            },
+            "email": {
+                "S": "jane@gmail.com"
+            },
+            "ssn": {
+                "S": "123412345"
+            },
+            "state": {
+                "S": "California"
+            },
+            "city": {
+                "S": "San Francisco"
+            },
+            "last_name": {
+                "S": "Smith"
+            },
+            "dob": {
+                "M": {
+                    "date": {
+                        "S": "1995-01-01"
+                    },
+                    "age": {
+                        "N": "26"
+                    }
+                }
+            },
+            "first_name": {
+                "S": "Jane"
+            },
+            "type_id": {
+                "S": "A"
+            },
+            "phone_number": {
+                "S": "2345678912"
+            },
+            "street_name": {
+                "S": "Old road"
+            },
+            "type": {
+                "S": "customer"
+            }
+        },
+        {
+            "minimum_balance": {
+                "S": "200"
+            },
+            "cvv": {
+                "S": "123"
+            },
+            "current_balance": {
+                "S": "400"
+            },
+            "status": {
+                "S": "active"
+            },
+            "type_id": {
+                "S": "A1"
+            },
+            "card_number": {
+                "S": "5678123456781234"
+            },
+            "customer_id": {
+                "S": "200002"
+            },
+            "last_transaction_date": {
+                "S": "09/09/2021"
+            },
+            "last_statement_balance": {
+                "S": "300"
+            },
+            "account_last4_digits": {
+                "S": "2340"
+            },
+            "type": {
+                "S": "account"
+            }
+        },
+        {
+            "payment_type": {
+                "S": "minimum-balance"
+            },
+            "source_routing_number": {
+                "S": "910910911"
+            },
+            "payment_id": {
+                "S": ""
+            },
+            "payment_date": {
+                "S": "10/28/2021"
+            },
+            "type_id": {
+                "S": "P1"
+            },
+            "card_number": {
+                "S": "1234123412341234"
+            },
+            "customer_id": {
+                "S": "200002"
+            },
+            "source_account_number": {
+                "S": "7856"
+            },
+            "type": {
+                "S": "payments"
+            }
+        },
+        {
+            "zip_code": {
+                "S": "12345"
+            },
+            "customer_id": {
+                "S": "200001"
+            },
+            "ssn_last4_digits": {
+                "S": "6789"
+            },
+            "wire_routing_number": {
+                "S": "910910910"
+            },
+            "house_number": {
+                "S": "1234"
+            },
+            "email": {
+                "S": "john@gmail.com"
+            },
+            "ssn": {
+                "S": "123456789"
+            },
+            "state": {
+                "S": "Texas"
+            },
+            "city": {
+                "S": "Dallas"
+            },
+            "last_name": {
+                "S": "Doe"
+            },
+            "dob": {
+                "M": {
+                    "date": {
+                        "S": "2001-01-01T09:44:18.674Z"
+                    },
+                    "age": {
+                        "N": "20"
+                    }
+                }
+            },
+            "first_name": {
+                "S": "John"
+            },
+            "type_id": {
+                "S": "A"
+            },
+            "phone_number": {
+                "S": "1234567890"
+            },
+            "street_name": {
+                "S": "Main Street"
+            },
+            "type": {
+                "S": "customer"
+            }
+        },
+        {
+            "minimum_balance": {
+                "S": "100"
+            },
+            "cvv": {
+                "S": "123"
+            },
+            "current_balance": {
+                "S": "300"
+            },
+            "status": {
+                "S": "active"
+            },
+            "type_id": {
+                "S": "A1"
+            },
+            "card_number": {
+                "S": "1234567812345678"
+            },
+            "customer_id": {
+                "S": "200001"
+            },
+            "last_transaction_date": {
+                "S": "09/06/2021"
+            },
+            "last_statement_balance": {
+                "S": "200"
+            },
+            "account_last4_digits": {
+                "S": "7891"
+            },
+            "type": {
+                "S": "account"
+            }
+        },
+        {
+            "minimum_balance": {
+                "S": "100"
+            },
+            "cvv": {
+                "S": "321"
+            },
+            "current_balance": {
+                "S": "350"
+            },
+            "card_last4_digits": {
+                "S": "4321"
+            },
+            "status": {
+                "S": "active"
+            },
+            "type_id": {
+                "S": "A2"
+            },
+            "card_number": {
+                "S": "8765432187654321"
+            },
+            "customer_id": {
+                "S": "200001"
+            },
+            "last_transaction_date": {
+                "S": "09/20/2021"
+            },
+            "last_statement_balance": {
+                "S": "250"
+            },
+            "type": {
+                "S": "account"
+            }
+        },
+        {
+            "payment_type": {
+                "S": "mininum-balance"
+            },
+            "source_routing_number": {
+                "S": "910910910"
+            },
+            "payment_id": {
+                "S": ""
+            },
+            "payment_date": {
+                "S": "10/28/2021"
+            },
+            "type_id": {
+                "S": "P1"
+            },
+            "card_number": {
+                "S": "8765432187654321"
+            },
+            "customer_id": {
+                "S": "200001"
+            },
+            "source_account_number": {
+                "S": "7890"
+            },
+            "type": {
+                "S": "payments"
+            }
+        }
+    ],
+    "Count": 8,
+    "ScannedCount": 8,
+    "ConsumedCapacity": null
+}

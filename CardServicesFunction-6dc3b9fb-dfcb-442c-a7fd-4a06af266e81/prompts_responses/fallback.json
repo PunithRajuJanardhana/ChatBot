@@ -1,0 +1,9 @@
+{
+    "ActivateCard": "Sorry? If you want to activate your card, say, 'activate my card'",
+    "ReportMissingCard": "Sorry? If you want to report missing card, say, 'report missing card'",
+    "ResetCardPIN": "Sorry? If you want to reset your card pin, say, 'I want to reset my card pin'",
+    "PayCardBill": "Sorry? If you want to pay your card bill, say, 'I want to make bill payment'",
+    "DefaultFallback": "Some of the things I can help you with are: bill payment, card activation, reporting missing card. Now, can you please rephrase your request?",
+    "EmailCardPIN": "Sorry. If you want to get it through email, say, 'email my PIN'.  Else say, send to address on file.",
+    "MailCardPIN": "Sorry, if you want me to send it to your address on file, say 'send to address on file'"
+}

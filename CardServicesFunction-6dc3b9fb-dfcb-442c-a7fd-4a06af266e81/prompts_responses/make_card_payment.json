@@ -1,0 +1,19 @@
+{
+    "PaymentConfirmation": "The payment will be applied to your account on {today}. Do you want to continue?",
+    "re-elicitPaymentConfirmation": "I didn't get that. Do you want to continue if the payment gets applied to your account on {today}? Pease say either 'yes' or 'no'.",
+    "SSNVerification": "For verification, please enter the last 4 digits of the primary card holder's social security number.",
+    "SSNDenied": "Okay then. I'll not proceed. Is there anything else I can help you with?",
+    "InvalidSSN": "<speak><say-as interpret-as='digits'> {ssn_last4_digits}</say-as>. OK. I didn't find a match for that. Please say or enter the last 4 digits of the ssn number again.</speak>",
+    "CheckAccountType": "<speak>Our records indicate your last payment transaction was processed using a checking account number ending in <say-as interpret-as='digits'> {source_account_number} </say-as> <break time='0.5s'/>If you like to use this account for today's transaction, say, same account. Otherwise, say, different account.</speak>",
+    "SameAccount": "All right. So how much would you like to pay? Your minimum due of {minimum_due} dollars, remaining statement balance of {last_statement_balance} dollars, current balance of {current_balance} dollars, or a different amount.",
+    "DiffrentAccount": "Okay then. Please tell me the last 4 digits of the account number you like to use for today's transaction.",
+    "CheckAuthorization": "<speak>On {today}, you are requesting a payment of {payment_option} in the amount of {payment_amount} dollars  towards your credit card account. The funds will be withdrawn as a one time electronic transfer from your bank account, ending in <say-as interpret-as='digits'>{account_number_last_4_digits}</say-as>, typically within two business days of this payment date. Can I go ahead with the payment request</speak>",
+    "CheckAuthorizationDifferentAmount": "<speak>On {today}, you are requesting a payment of {payment_amount} dollars towards your credit card account. The funds will be withdrawn as a one time electronic transfer from your bank account, ending in <say-as interpret-as='digits'>{account_number_last_4_digits}</say-as>, typically within two business days of this payment date. Can I go ahead with the payment request</speak>",
+    "re-elicitCheckAuthorization": "I didn't get that. Can I go ahead with the payment request? Please say either 'yes' or 'no'",
+    "PaymentAmount": "OK. And how much would you like to pay?",
+    "PaymentOptionFailure": "I didn't follow that. Please say either 'current payment amount', 'remaining statement balance',  'current balance' or 'different amount'",
+    "IfCancel" : "Okay then. I'll not proceed. What else can I do for you?",
+    "InvalidCsv" : "<speak>I didn't find a match for that. Please say or enter the three digit security code again. </speak>",
+    "Fulfilled" : "<speak>Thank you. Your payment was successful, and has a confirmation number <say-as interpret-as='digits'>12345678</say-as><break time='0.5s'/> That is <say-as interpret-as='digits'>12345678</say-as> <break time='1s'/>Is there anything else I can help you with?</speak>",
+    "Authorised" : "Please enter the 3 digit security code printed on the back of your card."
+}

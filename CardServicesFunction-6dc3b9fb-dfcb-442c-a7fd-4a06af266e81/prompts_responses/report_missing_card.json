@@ -1,0 +1,6 @@
+{
+    "CardMissingDate": "OK. Please tell me the date.",
+    "DateAvailabilityCheck": "Okay. Don't worry, I'll help you to block the card, to avoid any unauthorized transactions. Do you remember on what date the card went missing?",
+    "re-elicitDateAvailabilityCheck": "I didn't get that. Do you remember on what date the card went missing? Please say either 'yes' or 'no'.",
+    "NoticedUnauthorisedTransaction": "Got it. Did you notice any unauthorised transactions?"
+}

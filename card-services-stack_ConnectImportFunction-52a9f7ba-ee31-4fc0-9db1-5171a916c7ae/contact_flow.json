@@ -1,0 +1,306 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "d347ae9b-b34f-4fc3-9c4d-eae26358124c",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 15,
+      "y": 15
+    },
+    "snapToGrid": false,
+    "ActionMetadata": {
+      "d347ae9b-b34f-4fc3-9c4d-eae26358124c": {
+        "position": {
+          "x": 187,
+          "y": 19
+        },
+        "overrideConsoleVoice": false,
+        "defaultVoice": "Standard"
+      },
+      "7a0b6e09-14c4-4888-8216-63570606b6ec": {
+        "position": {
+          "x": 219,
+          "y": 237
+        },
+        "useDynamic": false
+      },
+      "3574f616-10dc-4bcf-8159-73ae564b8954": {
+        "position": {
+          "x": 193,
+          "y": 703
+        },
+        "useDynamic": false
+      },
+      "0816474d-4aa7-4f20-99e5-dad3c12654df": {
+        "position": {
+          "x": 1474,
+          "y": 527
+        }
+      },
+      "2451f590-c057-4037-8085-ec4eefc1161d": {
+        "position": {
+          "x": 723,
+          "y": 195
+        },
+        "useDynamic": false
+      },
+      "bd51f3d1-aec9-4185-96d7-751cf6f32cc8": {
+        "position": {
+          "x": 1280,
+          "y": 147
+        },
+        "useDynamic": false
+      },
+      "be4852ea-1a37-44df-bc03-b3bea5878608": {
+        "position": {
+          "x": 1226,
+          "y": 379
+        },
+        "useDynamic": false
+      },
+      "b3865cb0-a2c1-40aa-9b6d-46c630b6cac7": {
+        "position": {
+          "x": 1008,
+          "y": 250
+        },
+        "conditionMetadata": [{
+          "id": "b32f68e9-ac19-4251-8302-791369bdf168",
+          "value": "EndConversation"
+        }],
+        "useDynamic": false,
+        "dynamicMetadata": {
+          "x-amz-lex:audio:max-length-ms:[MakeCardPayment]:[3DigitSecurityCode]": false,
+          "x-amz-lex:audio:max-length-ms:[ZipCodeVerificationNewCard]:[ZipCode]": false,
+          "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[AccountNumberLast4digits]": false,
+          "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[SSNLast4Digits]": false,
+          "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[3DigitSecurityCode]": false,
+          "x-amz-lex:audio:start-timeout-ms:[ResetCardPIN]:[SecurityCode]": false,
+          "x-amz-lex:audio:start-timeout-ms:[EmailVerificationPIN]:[Email]": false,
+          "x-amz-lex:audio:start-timeout-ms:[ZipCodeVerificationNewCard]:[ZipCode]": false,
+          "card_number": false,
+          "x-amz-lex:audio:end-timeout-ms:*:*": false,
+          "x-amz-lex:audio:start-timeout-ms:*:*": false,
+          "customer_id": false
+        },
+        "useLexBotDropdown": true,
+        "useDynamicLexBotArn": false,
+        "lexV2BotName": "bot_name",
+        "lexV2BotAliasName": "Prod"
+      },
+      "644fdfed-2a6a-4a2a-b41a-50517c122369": {
+        "position": {
+          "x": 491,
+          "y": 396
+        },
+        "conditionMetadata": [{
+          "operator": {
+            "name": "Equals",
+            "value": "Equals",
+            "shortDisplay": "="
+          },
+          "value": ".AUTHENTICATED",
+          "id": "3eae8c57-ac32-45d9-b153-109190f9c6d0"
+        }]
+      },
+      "d437197d-3257-4d5b-81fa-f8499d2a80ac": {
+        "position": {
+          "x": 200,
+          "y": 435
+        },
+        "conditionMetadata": [],
+        "useDynamic": false,
+        "dynamicMetadata": {
+          "x-amz-lex:audio:start-timeout-ms:[Authentication]:[CardNumber]": false,
+          "x-amz-lex:audio:start-timeout-ms:[Authentication]:[ZipCode]": false,
+          "x-amz-lex:audio:end-timeout-ms:*:*": false,
+          "x-amz-lex:audio:start-timeout-ms:*:*": false
+        },
+        "useLexBotDropdown": true,
+        "useDynamicLexBotArn": false,
+        "lexV2BotName": "bot_name2",
+        "lexV2BotAliasName": "Prod"
+      },
+      "64e25090-3876-4a52-bea5-0ad1a9fbf3ed": {
+        "position": {
+          "x": 478,
+          "y": 51
+        }
+      }
+    }
+  },
+  "Actions": [{
+    "Identifier": "d347ae9b-b34f-4fc3-9c4d-eae26358124c",
+    "Parameters": {
+      "TextToSpeechVoice": "Joanna"
+    },
+    "Transitions": {
+      "NextAction": "7a0b6e09-14c4-4888-8216-63570606b6ec",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "UpdateContactTextToSpeechVoice"
+  }, {
+    "Identifier": "7a0b6e09-14c4-4888-8216-63570606b6ec",
+    "Parameters": {
+      "Text": "Welcome to TBME bank card services."
+    },
+    "Transitions": {
+      "NextAction": "d437197d-3257-4d5b-81fa-f8499d2a80ac",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "MessageParticipant"
+  }, {
+    "Identifier": "3574f616-10dc-4bcf-8159-73ae564b8954",
+    "Parameters": {
+      "Text": "I didn't find a match."
+    },
+    "Transitions": {
+      "NextAction": "d437197d-3257-4d5b-81fa-f8499d2a80ac",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "MessageParticipant"
+  }, {
+    "Identifier": "0816474d-4aa7-4f20-99e5-dad3c12654df",
+    "Type": "DisconnectParticipant",
+    "Parameters": {},
+    "Transitions": {}
+  }, {
+    "Identifier": "2451f590-c057-4037-8085-ec4eefc1161d",
+    "Parameters": {
+      "Text": "Tell me the reason for your call."
+    },
+    "Transitions": {
+      "NextAction": "b3865cb0-a2c1-40aa-9b6d-46c630b6cac7",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "MessageParticipant"
+  }, {
+    "Identifier": "bd51f3d1-aec9-4185-96d7-751cf6f32cc8",
+    "Parameters": {
+      "SSML": "<speak></speak>"
+    },
+    "Transitions": {
+      "NextAction": "b3865cb0-a2c1-40aa-9b6d-46c630b6cac7",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "MessageParticipant"
+  }, {
+    "Identifier": "be4852ea-1a37-44df-bc03-b3bea5878608",
+    "Parameters": {
+      "SSML": "<speak></speak>"
+    },
+    "Transitions": {
+      "NextAction": "b3865cb0-a2c1-40aa-9b6d-46c630b6cac7",
+      "Errors": [],
+      "Conditions": []
+    },
+    "Type": "MessageParticipant"
+  }, {
+    "Identifier": "b3865cb0-a2c1-40aa-9b6d-46c630b6cac7",
+    "Parameters": {
+      "SSML": "<speak></speak>",
+      "LexSessionAttributes": {
+        "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[3DigitSecurityCode]": "8000",
+        "x-amz-lex:audio:start-timeout-ms:[ResetCardPIN]:[SecurityCode]": "8000",
+        "x-amz-lex:audio:start-timeout-ms:[ZipCodeVerificationNewCard]:[ZipCode]": "15000",
+        "card_number": "$.Attributes.card_number",
+        "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[SSNLast4Digits]": "8000",
+        "x-amz-lex:audio:max-length-ms:[ZipCodeVerificationNewCard]:[ZipCode]": "15000",
+        "x-amz-lex:audio:start-timeout-ms:[MakeCardPayment]:[AccountNumberLast4digits]": "8000",
+        "x-amz-lex:audio:start-timeout-ms:[EmailVerificationPIN]:[Email]": "8000",
+        "x-amz-lex:audio:start-timeout-ms:*:*": "10000",
+        "customer_id": "$.Attributes.customer_id",
+        "x-amz-lex:audio:end-timeout-ms:*:*": "1000",
+        "x-amz-lex:audio:max-length-ms:[MakeCardPayment]:[3DigitSecurityCode]": "15000"
+      },
+      "LexV2Bot": {
+        "AliasArn": "arn:aws:lex:us-east-1:049982172265:bot-alias/LQ0GTLASMI/TSTALIASID"
+      }
+    },
+    "Transitions": {
+      "NextAction": "be4852ea-1a37-44df-bc03-b3bea5878608",
+      "Errors": [{
+        "NextAction": "be4852ea-1a37-44df-bc03-b3bea5878608",
+        "ErrorType": "NoMatchingError"
+      }, {
+        "NextAction": "bd51f3d1-aec9-4185-96d7-751cf6f32cc8",
+        "ErrorType": "NoMatchingCondition"
+      }],
+      "Conditions": [{
+        "NextAction": "0816474d-4aa7-4f20-99e5-dad3c12654df",
+        "Condition": {
+          "Operator": "Equals",
+          "Operands": ["EndConversation"]
+        }
+      }]
+    },
+    "Type": "ConnectParticipantWithLexBot"
+  }, {
+    "Identifier": "644fdfed-2a6a-4a2a-b41a-50517c122369",
+    "Parameters": {
+      "ComparisonValue": "$.Attributes.authentication_status"
+    },
+    "Transitions": {
+      "NextAction": "0816474d-4aa7-4f20-99e5-dad3c12654df",
+      "Errors": [{
+        "NextAction": "0816474d-4aa7-4f20-99e5-dad3c12654df",
+        "ErrorType": "NoMatchingCondition"
+      }],
+      "Conditions": [{
+        "NextAction": "2451f590-c057-4037-8085-ec4eefc1161d",
+        "Condition": {
+          "Operator": "Equals",
+          "Operands": [".AUTHENTICATED"]
+        }
+      }]
+    },
+    "Type": "Compare"
+  }, {
+    "Identifier": "d437197d-3257-4d5b-81fa-f8499d2a80ac",
+    "Parameters": {
+      "Text": "Please say or enter your full card number",
+      "LexSessionAttributes": {
+        "x-amz-lex:audio:start-timeout-ms:[Authentication]:[CardNumber]": "15000",
+        "x-amz-lex:audio:start-timeout-ms:*:*": "10000",
+        "x-amz-lex:audio:end-timeout-ms:*:*": "1000",
+        "x-amz-lex:audio:start-timeout-ms:[Authentication]:[ZipCode]": "15000"
+      },
+      "LexV2Bot": {
+        "AliasArn": "arn:aws:lex:us-east-1:049982172265:bot-alias/XM39IFXGRG/TSTALIASID"
+      }
+    },
+    "Transitions": {
+      "NextAction": "3574f616-10dc-4bcf-8159-73ae564b8954",
+      "Errors": [{
+        "NextAction": "3574f616-10dc-4bcf-8159-73ae564b8954",
+        "ErrorType": "NoMatchingError"
+      }, {
+        "NextAction": "64e25090-3876-4a52-bea5-0ad1a9fbf3ed",
+        "ErrorType": "NoMatchingCondition"
+      }],
+      "Conditions": []
+    },
+    "Type": "ConnectParticipantWithLexBot"
+  }, {
+    "Identifier": "64e25090-3876-4a52-bea5-0ad1a9fbf3ed",
+    "Parameters": {
+      "Attributes": {
+        "card_number": "$.Lex.SessionAttributes.$.Lex.SessionAttributes.card_number",
+        "authentication_status": "$.Lex.SessionAttributes.$.Lex.SessionAttributes.authentication_status",
+        "customer_id": "$.Lex.SessionAttributes.customer_id"
+      }
+    },
+    "Transitions": {
+      "NextAction": "644fdfed-2a6a-4a2a-b41a-50517c122369",
+      "Errors": [{
+        "NextAction": "644fdfed-2a6a-4a2a-b41a-50517c122369",
+        "ErrorType": "NoMatchingError"
+      }],
+      "Conditions": []
+    },
+    "Type": "UpdateContactAttributes"
+  }]
+}
